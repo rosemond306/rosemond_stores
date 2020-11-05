@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efefef;
+
+}
+ .header-container{
+    background-color: white;
+    min-height: 148px;
+    width: 80%;
+    margin: auto;
+
+}.brand-div{
+        height: 128px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: auto;
+        align-items: center;
+        font-size: 30px;
+        border-bottom: 1px solid #efefef;
+}
+
+.menu-div li{
+    display: inline-block;
+    padding: 10px ;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    padding: 12px 0;
+}
+
+.menu-div li a{
+    text-decoration: none;
+}
+
+
+
+
+.fp{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 52px 20px;
+    max-width: 80%;
+    margin: auto;
+    padding: 31px 33px;
+    justify-items: center;
+}
+
+.fp .card{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.fp .card .cardcontent{
+    text-align: center;
+    padding: 5px;
+
+}
+.card .prodimg{
+    max-width: 100%;
+}
+.cardcontent .addtocart{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px 5px;
+    text-decoration: none;
+
+}
+.cardcontent .price{
+    padding:10px 10px ;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+  
+.cardcontent .ratings{
+    padding: 10px 10px;
+}
+
+#contactus{
+    padding-top: 20px;
+}
+#contactus .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    max-width: 80%;
+    background-color: wheat;
+
+}
+
+#contactus .container .googlemapimg{
+    padding: 20px 20px;
+}
+
+#contactus .container .googlemapimg img{
+    max-width: 100%;
+}
+
+#contactus .container .contactform{
+    background-color: white;
+}   
+.container .contactform h2{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.container .contactform .groupdiv{
+    padding: 10px 10px;
+}
+
+.container .contactform input{
+    border: 1px solid gray;
+    height: 26px;
+    border-radius: 4px;
+    padding-left: 6px;
+    background-color: honeydew;
+    font-size: 16px;
+    color:black;
+    
+}
+.btndiv{
+display: grid;
+grid-template-columns: 1fr;
+justify-items:center;
+}
+.rmdiv{
+    text-align: center;
+}
+
+.btndiv button{
+    max-width: 100px;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+.container .contactform .toplabel{
+    display: inline-block;
+    width: 112px;
+    text-align: right;
+}
+
+footer{
+    background-color: teal;
+    min-height:30px;
+}
+
+/* smartpone */
+@media(max-width:500px){
+    .fp{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 52px 20px;
+        max-width: 100%;
+        margin: auto;
+        padding: 31px 33px;
+        justify-items: center;
+    }
+
+    #contactus .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        max-width: 80%;
+        background-color: wheat;
+    
+    }
+    #contactus .container .googlemapimg{
+        display: none;
+    }
+    
+}
+
+/* tablets */
+@media(min-width:501px) and (max-width:768px){
+    .fp{
+        display: grid;
+        grid-template-columns: repeat( 2,1fr);
+        grid-gap: 52px 20px;
+        max-width: 90%;
+        margin: auto;
+        padding: 31px 33px;
+        justify-items: center;
+    }
+    #contactus .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        max-width: 80%;
+        background-color: wheat;
+    
+    }
+    
+
+}
